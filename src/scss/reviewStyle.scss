@@ -1,0 +1,115 @@
+.review__container {
+    margin-bottom: 130px;
+}
+.review__title {
+    margin: 16px auto 48px;
+    max-width: 417px;
+}
+.slider {
+    position: relative;
+}
+.slider .slick-list{
+    order: 1;
+	overflow: hidden;
+}
+.slider .slick-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.slider__item {
+    max-width: 676px;
+}
+.slider__item-title {
+    font-size: 14px;
+    line-height: 22px;
+    color: #AEAEB2;
+    position: relative;
+    &::after {
+        content: url(/img/quote-up.svg);
+        position: absolute;
+        left: -72px;
+        top: 0;
+    }
+}
+.slider__item-text {
+    margin: 16px 0 32px;
+    max-width: 604px;
+    font-family: GeneralSans, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1E;
+}
+.slider__item-person {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.slider__item-image {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+}
+.slider__item-person-data {
+    margin-left: 12px;
+}
+.slider__item-person-name {
+    color: #1C1C1E;
+}
+.slider__item-person-role {
+    font-family: GeneralSans, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+.slider .slick-dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    margin: 0 2px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    display: block;
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background: #E9EBED;
+    transition: all 0.3s ease-in 0s;
+}
+.slider .slick-dots .slick-active button{
+    font-size: 0;
+    display: block;
+    border-radius: 12px;
+    width: 24px;
+    height: 12px;
+    background: $main_blue;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    display: block;
+    border-radius: 50%;
+    font-size: 24px;
+    color: $main_blue;
+    transition: all 0.3s ease-in 0s;
+}
+.slider .slick-arrow.slick-prev{
+    transform: translateX(-58px) rotate(180deg);
+}
+.slider .slick-arrow.slick-next{
+    transform: translateX(36px)
+}
+.slider .slick-arrow.slick-disabled{
+    font-size: 16px;
+    bottom: -2px;
+    color: #AEAEB2;
+}
+.slider .slick-arrow.slick-prev.slick-disabled{
+    transform: translateX(-54px) rotate(180deg);
+}

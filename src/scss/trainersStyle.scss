@@ -1,0 +1,114 @@
+.trainers__container {
+    margin-top: 86px;
+    padding-top: 70px;
+}
+.trainers__big-title {
+    text-align: center;
+}
+.trainers__text {
+    margin: 16px auto 84px;
+    text-align: center;
+    max-width: 624px;
+}
+.trainers__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 310px);
+    gap: 40px;
+    justify-items: center;
+    justify-content: space-evenly
+}
+.trainers__item {
+    min-width: 282px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.trainers__photo {
+    width: 258px;
+    height: 258px;
+}
+.trainers__name {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1E;
+    margin: 20px 0;
+}
+.trainers__role {
+    font-family: 'GeneralSans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #636366;
+    margin-bottom: 12px;
+}
+.trainers__links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.trainers__link {
+    padding: 13px;
+    border-radius: 50%;
+    border: 1px solid #8E8E93;
+    position: relative;
+    transition: all 0.4s ease-in 0s;
+    & + * {
+        margin-left: 10px;
+    }
+    &:hover {
+        border: 1px solid $main_salat;
+        color: $main_salat;
+        transform: scale(1.2);
+    }
+}
+.main__motivation {
+    margin-top: 240px;
+}
+.motivation__container {
+}
+.motivation__title {
+    margin-bottom: 56px;
+}
+.motivation__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.motivation__item {
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 20px;
+    max-width: 362px;
+    padding: 40px;
+    &:nth-child(2) {
+        background-color: $main_blue;
+        & .motivation__icons {
+            color: #fff;
+        }
+        & .motivation__subtitle {
+            color: #fff;
+        }
+        & .motivation__text {
+            color: #fff;
+            opacity: 0.8;
+        }
+    }
+}
+.motivation__icons {
+    font-size: 40px;
+    margin: 16px 0 20px;
+}
+.motivation__subtitle {
+    margin-bottom: 24px;
+}
+.motivation__text {
+    font-family: 'GeneralSans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #636366;
+    margin-bottom: 12px;
+}

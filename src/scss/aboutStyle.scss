@@ -1,0 +1,124 @@
+.main__story {
+    background-color: $main_blue;
+}
+.story__container {
+    margin-top: 86px;
+    padding-top: 70px;
+    position: relative;
+    padding-bottom: 470px;
+}
+.story__microtitle {
+    margin: 0 0 24px 0;
+}
+.microtitle_green {
+    color: $main_salat;
+    border: 1px solid $main_salat;
+}
+.story__title {
+    max-width: 485px;
+    font-family: 'GeneralSans', sans-serif;
+    font-size: 72px;
+    line-height: 80px;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+    & span {
+        font-family: 'GeneralSansSemiBold', sans-serif;
+    }
+}
+.story__text {
+    max-width: 532px;
+    position: absolute;
+    top: 140px;
+    right: 0;
+}
+.story__text-title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.story__text-content {
+    font-family: 'GeneralSans', sans-serif;
+    color: #D1D1D6;
+    font-size: 18px;
+    line-height: 26px;
+}
+.story__imagearea {
+    position: absolute;
+    bottom: 558px;
+    left: 23%;
+}
+.story__image-wrapper {
+    position: relative;
+}
+.story__image {
+    position:absolute;
+    z-index: 2;
+}
+.story__indicators {
+    position: absolute;
+    -webkit-backdrop-filter: blur(10px);
+ 	backdrop-filter: blur(10px);
+    background: linear-gradient(76.06deg, rgba(255, 255, 255, 0.24) 3.01%, rgba(255, 255, 255, 0) 112.22%);
+    width: 213px;
+    height: 106px;
+    border-radius: 16px;
+    padding: 24px;
+    z-index: 1;
+    &:nth-child(2) {
+        top: 84px;
+        left: 445px;
+    }
+    &:nth-child(3) {
+        top: 345px;
+        left: -66px;
+    }
+}
+.story__icons {
+    position: absolute;
+    color: #ffffff;
+    top: 32px;
+    font-size: 32px;
+    &::after {
+        width: 12px;
+        height: 12px;
+    }
+}
+.story__rates {
+    font-family: 'GeneralSans', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 40px;
+}
+.story__digits {
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-left: 40px;
+}
+.main__core-work {
+    margin: 120px 0 240px;
+}
+.core-work__title {
+    margin-bottom: 56px;
+}
+.core-work__suggest .suggest__item {
+    &:nth-child(3) {
+        flex-direction: row;
+    }
+}
+.core-work__suggest .suggest__textarea {
+    flex: 0 1 473px;
+    padding: 64px 40px;
+}
+.core-work__suggest .suggest__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #1C1C1E;
+}
+.core-work__suggest .suggest__imageare {
+    border-radius: 20px;
+    margin-top: 0;
+}

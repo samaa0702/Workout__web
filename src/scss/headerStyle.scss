@@ -1,0 +1,141 @@
+.header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+}
+.header_blue {
+    background-color: $main_blue;
+}
+.header__container {
+    min-height: 40px;   
+}
+.header__bar {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+}
+.menu__item {
+    & + * {
+        margin-left: 40px;
+    }
+}
+.menu__link {
+    color: #8E8E93;
+    &:visited {
+        color: #8E8E93;
+    }
+    &:active {
+        color: #1C1C1E;
+    }
+    &:focus {
+        color: #1C1C1E;
+    }
+    &:hover {
+        color: $main_salat;
+    }
+}
+.menu__link.link__active {
+    color: #1C1C1E;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background-color: $main_salat;
+        height: 8px;
+        width: 8px;
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        transform: translate(-45%, 0);
+        z-index: -1;
+    }
+}
+.header__profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile__basket {
+    margin-right: 32px;
+}
+.basket__link {
+    font-size: 26px;
+    color: #1C1C1E;
+}
+.profile__login {
+    margin-right: 16px;
+}
+.btn {
+    width: 83px;
+    height: 46px;
+    position: relative;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: #ffffff84 3px 3px;
+    }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: inset #33333384 3px 3px 3px 3px;
+    }
+}
+.btn_secondary {
+    border: 1px solid #1C1C1E;
+    border-radius: 20px;
+}
+.btn__link {
+    text-align: center;
+    font-size: 14px;
+    color: #1C1C1E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 12px 0px 0px 0px;
+    border-radius: 20px;
+}
+.btn_primary {
+    background-color: $main_salat;
+    border-radius: 20px;
+}
+
+.header_blue {
+    & .menu__link {
+        &:visited {
+           color: #c9c9d5;
+        }
+        &:active {
+            color: #ffffff;
+        }
+        &:focus {
+            color:#ffffff;
+        }
+        &:hover {
+            color: $main_salat;
+        }
+    }
+    & .menu__link.link__active {
+        color: #ffffff;
+    }
+    & .basket__link {
+        color: #ffffff;
+    }
+    & .btn_secondary {
+        border-color: #ffffff;
+        & .btn__link {
+            color: #ffffff;
+        }
+    }
+}
+.header__burger {
+    display: none;
+}
+

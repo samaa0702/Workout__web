@@ -1,0 +1,26 @@
+.main__discover {
+    background-color: $main_blue;
+    padding: 80px 0;
+}
+.discover__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.discover__textarea {
+    max-width: 610px;
+}
+.discover__motivation {
+    font-size: 48px;
+    line-height: 56px;
+    color: #ffffff;
+    margin-bottom: 16px;    
+}
+.discover__text {
+    opacity: 0.64;
+    color: #FFFFFF;
+}
+.discover__btn {
+    width: 130px;
+}

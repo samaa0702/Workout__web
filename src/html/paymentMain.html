@@ -1,0 +1,56 @@
+<main class="main">
+    <section class="main__payment">
+        <div class="payment__container">
+            <div class="payment__title"><p>Get your package</p></div>
+            <form action="#" class="payment__form" method="post" enctype="multipart/form-data">
+                <div class="payment__wrapper">
+                    <p class="payment__big-text">Pay with</p>
+                    <div class="payment__radio"><input type="radio" name = "payWith" class="payment__radio-input"><img src="img/paypal.svg" alt=""></div>
+                    <div class="payment__radio"><input type="radio" name = "payWith" class="payment__radio-input"><img src="img/ApplePay.svg" alt=""></div>
+                    <p class="payment__text_grey">Or  using a credit card</p>
+                    <p class="payment__text">Cardholder Name</p>
+                    <div class="payment__card-info"><input type="text" class="payment__text-input" name="cardholderName"></div>
+                    <p class="payment__text">Card Number</p>
+                    <div class="payment__card-info"><input type="tel" class="payment__text-input" name="cardNumber" placeholder="Ex:  31111 1111 1111 1111"></div>
+                    <div class="payment__card-info-bar">
+                        <div class="payment__card-info">
+                            <p class="payment__text">Postal Code</p>
+                            <input type="text" class="payment__text-input" name="cardNumber" placeholder="Postal or ZIP code">
+                        </div>
+                        <div class="payment__card-info">
+                            <p class="payment__text">Expiration</p>
+                            <input type="text" class="payment__text-input" name="cardNumber" placeholder="MM/YY">
+                        </div>
+                        <div class="payment__card-info">
+                            <p class="payment__text">CVV</p>
+                            <input type="tel" class="payment__text-input" name="cardNumber"    >
+                        </div>
+                    </div>
+                    <p><input type="radio" name = "saveCArd" class="payment__radio-input_savecard">Save card</p>
+                    <div class="payment__details">
+                        <div class="price-bar__price"><p><span>$149</span>/Month</p></div>
+                        <div class="paymentl__details-title"><p>Basic plan</p></div>
+                        <div class="payment__details-text"><p>Suspendisse feugiat scelerisque et, viverra urna imperdiet non malesuada.</p></div>
+                        <div class="payment__details-list">
+                            <div class="payment__details-list-title"><p>What’s Includes:</p></div>
+                            <ul class="payment__details-price-bar price-bar__list">
+                                <li class="price-bar__list-item"><div class="price-bar__list-icon _icon-ok"></div><div class="price-bar__list-text"><p>8 classes per month</p></div></li>
+                                <li class="price-bar__list-item"><div class="price-bar__list-icon _icon-ok"></div><div class="price-bar__list-text"><p>All in basic package</p></div></li>
+                                <li class="price-bar__list-item"><div class="price-bar__list-icon _icon-ok"></div><div class="price-bar__list-text"><p>1-on-1 personal trainning</p></div></li>
+                            </ul>
+                            <div class="payment__card-info">
+                                <p class="payment__text">Package Duration</p>
+                                <select name="" class="payment__select-input">
+                                    <option value="month">1 Month</option>
+                                    <option value="halfYear">6 Month</option>
+                                    <option value="Year">12 Month</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment__btn btn btn_primary"><button class="btn__link" type="submit">Confirm and pay</button></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

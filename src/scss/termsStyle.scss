@@ -1,0 +1,43 @@
+
+.privacy__textarea {
+    margin-top: 86px;
+    padding-right: 70px;
+    margin-bottom: 120px;
+}
+.privacy__update-date {
+    margin: 36px 0 36px;
+    font-family: 'GeneralSans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #636366;
+}
+.privacy__text {
+    & p {
+        margin: 18px 0 18px;
+        color: #636366;
+        & span {
+            font-family: "GeneralSansSemoBold", sans-serif;
+            font-size: 20px;
+            line-height: 28px;
+            color: #09080D;
+        }
+    }
+}
+.privacy__text-title {
+    font-size: 32px;
+    line-height: 40px;
+    color: #09080D
+}
+.privacy__text-list {
+    color: #636366;
+    & li::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #09080D;
+        margin-right: 6px;
+        margin-left: 16px;
+    }
+}
